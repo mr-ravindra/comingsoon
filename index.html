@@ -382,6 +382,23 @@ body{
     margin-bottom:30px;
 }
 
+.sparkle {
+    display: inline-block;
+    font-size: 42px;
+    animation: floatGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(-10px) scale(1.15);
+        opacity: 1;
+    }
+}
+
 }
 
 </style>
@@ -396,23 +413,7 @@ body{
 <div class="card">
 
 <div class="logo">
-<svg width="42" height="42" viewBox="0 0 24 24"
-fill="none"
-stroke="white"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
-
-<path d="M14 4l6 6"/>
-<path d="M20 4l-6 6"/>
-
-<path d="M9 15L4 20"/>
-<path d="M15 15l5 5"/>
-
-<path d="M8 16l-2 2"/>
-<path d="M16 16l2 2"/>
-
-</svg>
+<span class="sparkle" aria-hidden="true">✨</span>
 </div>
 
 <div class="badge">
